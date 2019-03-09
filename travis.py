@@ -37,6 +37,10 @@ TRAVIS_ALLOWED_FAILURES = [
     ('3.8', 'precise'),
     ('3.8-dev', 'trusty'),
     ('3.8-dev', 'precise'),
+    ('pypy', 'xenial'),
+    ('pypy3', 'xenial'),
+    ('pypy-5.3.1', 'xenial'),
+    ('pypy-5.4.1', 'xenial'),
 ]
 
 

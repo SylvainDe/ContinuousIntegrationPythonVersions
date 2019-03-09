@@ -196,6 +196,18 @@ matrix:
   - os: linux
     dist: precise
     python: 3.8-dev
+  - os: linux
+    dist: xenial
+    python: pypy
+  - os: linux
+    dist: xenial
+    python: pypy3
+  - os: linux
+    dist: xenial
+    python: pypy-5.3.1
+  - os: linux
+    dist: xenial
+    python: pypy-5.4.1
 
 script:
  - python -VV
