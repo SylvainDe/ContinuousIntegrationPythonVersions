@@ -5,8 +5,6 @@ TRAVIS_PYTHON_VERSIONS = [
     'nightly',
     '2.6',
     '2.7',
-    '3.0',
-    '3.1',
     '3.2',
     '3.3',
     '3.4',
@@ -14,13 +12,6 @@ TRAVIS_PYTHON_VERSIONS = [
     '3.6',
     '3.7',
     '3.8',
-    '2.6-dev',
-    '2.7-dev',
-    '3.0-dev',
-    '3.1-dev',
-    '3.2-dev',
-    '3.3-dev',
-    '3.4-dev',
     '3.5-dev',
     '3.6-dev',
     '3.7-dev',
@@ -30,7 +21,24 @@ TRAVIS_PYTHON_VERSIONS = [
     'pypy-5.3.1',
     'pypy-5.4.1',
 ]
-TRAVIS_DIST = ['xenial', 'trusty', 'precise']
+TRAVIS_DIST = [
+    'xenial',  # 16.04
+    'trusty',  # 14.04
+    'precise',  # 12.04
+]
+TRAVIS_ALLOWED_FAILURES = [
+    ('2.6', 'xenial'),
+    ('3.2', 'xenial'),
+    ('3.3', 'xenial'),
+    ('3.7', 'trusty'),
+    ('3.7', 'precise'),
+    ('3.8', 'xenial'),
+    ('3.8', 'trusty'),
+    ('3.8', 'precise'),
+    ('3.8-dev', 'trusty'),
+    ('3.8-dev', 'precise'),
+]
+
 
 with open(TRAVIS_CONFIG_FILE, 'w') as f:
     f.write("""
@@ -43,6 +51,14 @@ matrix:
   - os: linux
     dist: {dist}
     python: {version}""".format(dist=dist, version=vers))
+    f.write("""
+  allow_failures:""")
+    for vers, dist in TRAVIS_ALLOWED_FAILURES:
+        f.write("""
+  - os: linux
+    dist: {dist}
+    python: {version}""".format(dist=dist, version=vers))
+
     f.write("""
 
 script:
