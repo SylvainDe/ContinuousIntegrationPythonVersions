@@ -1,0 +1,252 @@
+
+language: python
+
+matrix:
+  include: 
+  - os: linux
+    dist: xenial
+    python: nightly
+  - os: linux
+    dist: trusty
+    python: nightly
+  - os: linux
+    dist: precise
+    python: nightly
+  - os: linux
+    dist: xenial
+    python: 2.6
+  - os: linux
+    dist: trusty
+    python: 2.6
+  - os: linux
+    dist: precise
+    python: 2.6
+  - os: linux
+    dist: xenial
+    python: 2.7
+  - os: linux
+    dist: trusty
+    python: 2.7
+  - os: linux
+    dist: precise
+    python: 2.7
+  - os: linux
+    dist: xenial
+    python: 3.0
+  - os: linux
+    dist: trusty
+    python: 3.0
+  - os: linux
+    dist: precise
+    python: 3.0
+  - os: linux
+    dist: xenial
+    python: 3.1
+  - os: linux
+    dist: trusty
+    python: 3.1
+  - os: linux
+    dist: precise
+    python: 3.1
+  - os: linux
+    dist: xenial
+    python: 3.2
+  - os: linux
+    dist: trusty
+    python: 3.2
+  - os: linux
+    dist: precise
+    python: 3.2
+  - os: linux
+    dist: xenial
+    python: 3.3
+  - os: linux
+    dist: trusty
+    python: 3.3
+  - os: linux
+    dist: precise
+    python: 3.3
+  - os: linux
+    dist: xenial
+    python: 3.4
+  - os: linux
+    dist: trusty
+    python: 3.4
+  - os: linux
+    dist: precise
+    python: 3.4
+  - os: linux
+    dist: xenial
+    python: 3.5
+  - os: linux
+    dist: trusty
+    python: 3.5
+  - os: linux
+    dist: precise
+    python: 3.5
+  - os: linux
+    dist: xenial
+    python: 3.6
+  - os: linux
+    dist: trusty
+    python: 3.6
+  - os: linux
+    dist: precise
+    python: 3.6
+  - os: linux
+    dist: xenial
+    python: 3.7
+  - os: linux
+    dist: trusty
+    python: 3.7
+  - os: linux
+    dist: precise
+    python: 3.7
+  - os: linux
+    dist: xenial
+    python: 3.8
+  - os: linux
+    dist: trusty
+    python: 3.8
+  - os: linux
+    dist: precise
+    python: 3.8
+  - os: linux
+    dist: xenial
+    python: 2.6-dev
+  - os: linux
+    dist: trusty
+    python: 2.6-dev
+  - os: linux
+    dist: precise
+    python: 2.6-dev
+  - os: linux
+    dist: xenial
+    python: 2.7-dev
+  - os: linux
+    dist: trusty
+    python: 2.7-dev
+  - os: linux
+    dist: precise
+    python: 2.7-dev
+  - os: linux
+    dist: xenial
+    python: 3.0-dev
+  - os: linux
+    dist: trusty
+    python: 3.0-dev
+  - os: linux
+    dist: precise
+    python: 3.0-dev
+  - os: linux
+    dist: xenial
+    python: 3.1-dev
+  - os: linux
+    dist: trusty
+    python: 3.1-dev
+  - os: linux
+    dist: precise
+    python: 3.1-dev
+  - os: linux
+    dist: xenial
+    python: 3.2-dev
+  - os: linux
+    dist: trusty
+    python: 3.2-dev
+  - os: linux
+    dist: precise
+    python: 3.2-dev
+  - os: linux
+    dist: xenial
+    python: 3.3-dev
+  - os: linux
+    dist: trusty
+    python: 3.3-dev
+  - os: linux
+    dist: precise
+    python: 3.3-dev
+  - os: linux
+    dist: xenial
+    python: 3.4-dev
+  - os: linux
+    dist: trusty
+    python: 3.4-dev
+  - os: linux
+    dist: precise
+    python: 3.4-dev
+  - os: linux
+    dist: xenial
+    python: 3.5-dev
+  - os: linux
+    dist: trusty
+    python: 3.5-dev
+  - os: linux
+    dist: precise
+    python: 3.5-dev
+  - os: linux
+    dist: xenial
+    python: 3.6-dev
+  - os: linux
+    dist: trusty
+    python: 3.6-dev
+  - os: linux
+    dist: precise
+    python: 3.6-dev
+  - os: linux
+    dist: xenial
+    python: 3.7-dev
+  - os: linux
+    dist: trusty
+    python: 3.7-dev
+  - os: linux
+    dist: precise
+    python: 3.7-dev
+  - os: linux
+    dist: xenial
+    python: 3.8-dev
+  - os: linux
+    dist: trusty
+    python: 3.8-dev
+  - os: linux
+    dist: precise
+    python: 3.8-dev
+  - os: linux
+    dist: xenial
+    python: pypy
+  - os: linux
+    dist: trusty
+    python: pypy
+  - os: linux
+    dist: precise
+    python: pypy
+  - os: linux
+    dist: xenial
+    python: pypy3
+  - os: linux
+    dist: trusty
+    python: pypy3
+  - os: linux
+    dist: precise
+    python: pypy3
+  - os: linux
+    dist: xenial
+    python: pypy-5.3.1
+  - os: linux
+    dist: trusty
+    python: pypy-5.3.1
+  - os: linux
+    dist: precise
+    python: pypy-5.3.1
+  - os: linux
+    dist: xenial
+    python: pypy-5.4.1
+  - os: linux
+    dist: trusty
+    python: pypy-5.4.1
+  - os: linux
+    dist: precise
+    python: pypy-5.4.1
+
+script:
+ - python -VV
+ - python -c "import sys; print(sys._git)" || true
