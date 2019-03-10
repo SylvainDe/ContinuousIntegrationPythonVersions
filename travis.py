@@ -17,9 +17,11 @@ TRAVIS_PYTHON_VERSIONS = [
     '3.7-dev',
     '3.8-dev',
     'pypy',
+    'pypy2.7-6.0',
     'pypy3',
     'pypy-5.3.1',
     'pypy-5.4.1',
+    'pypy3.5-6.0',
 ]
 TRAVIS_DIST = [
     'xenial',  # 16.04

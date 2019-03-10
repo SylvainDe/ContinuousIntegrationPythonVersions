@@ -140,6 +140,15 @@ matrix:
     python: pypy
   - os: linux
     dist: xenial
+    python: pypy2.7-6.0
+  - os: linux
+    dist: trusty
+    python: pypy2.7-6.0
+  - os: linux
+    dist: precise
+    python: pypy2.7-6.0
+  - os: linux
+    dist: xenial
     python: pypy3
   - os: linux
     dist: trusty
@@ -165,6 +174,15 @@ matrix:
   - os: linux
     dist: precise
     python: pypy-5.4.1
+  - os: linux
+    dist: xenial
+    python: pypy3.5-6.0
+  - os: linux
+    dist: trusty
+    python: pypy3.5-6.0
+  - os: linux
+    dist: precise
+    python: pypy3.5-6.0
   allow_failures:
   - os: linux
     dist: xenial
