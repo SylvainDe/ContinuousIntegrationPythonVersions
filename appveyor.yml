@@ -21,4 +21,3 @@ build: off
 
 test_script:
   - "%PYTHON%\\python.exe -VV"
-  - "%PYTHON%\\python.exe -c 'import sys; print(sys._git)'"
