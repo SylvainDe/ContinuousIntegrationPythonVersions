@@ -36,7 +36,6 @@ TRAVIS_ALLOWED_FAILURES = [
     ('3.3', 'xenial'),
     ('3.7', 'trusty'),
     ('3.7', 'precise'),
-    ('3.8', 'xenial'),
     ('3.8', 'trusty'),
     ('3.8', 'precise'),
     ('3.8-dev', 'trusty'),

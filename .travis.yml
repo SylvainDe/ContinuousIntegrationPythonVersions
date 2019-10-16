@@ -218,9 +218,6 @@ matrix:
     dist: precise
     python: 3.7
   - os: linux
-    dist: xenial
-    python: 3.8
-  - os: linux
     dist: trusty
     python: 3.8
   - os: linux
