@@ -230,9 +230,6 @@ matrix:
     dist: precise
     python: 3.8-dev
   - os: linux
-    dist: xenial
-    python: 3.9
-  - os: linux
     dist: trusty
     python: 3.9
   - os: linux
