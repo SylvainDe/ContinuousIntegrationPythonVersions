@@ -269,9 +269,6 @@ matrix:
     dist: precise
     python: 3.10
   - os: linux
-    dist: xenial
-    python: 3.10-dev
-  - os: linux
     dist: trusty
     python: 3.10-dev
   - os: linux
