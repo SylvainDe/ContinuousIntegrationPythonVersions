@@ -1,4 +1,4 @@
-name: Python package
+name: my_github_actions
 
 on: [push]
 
